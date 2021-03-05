@@ -1,0 +1,32 @@
+<div>
+<h1><%= @auction.title %></h1>
+<p><%= @auction.description %></p>
+<p> Ends at:<%= @auction.ends_at %></p>
+<p>Reserve price: <%= @auction.reserve_price %></p>
+</div
+
+</br></br>
+
+<%= form_with(model: [@auction, @bid], local: true) do |f| %>
+  <%= f.text_area(
+    :description,
+    cols: 40,
+    rows: 2
+  )%>
+  </br>
+  <%= f.submit "Bid"%>
+  </br></br>
+<% end %>
+
+<p> Previous Bids </p>
+<hr style="width:100px;text-align:left;margin-left:0">
+
+<% @bids.each do |b| %>
+  $<%= b.description %>
+
+    <small>
+      Created by: <%= b.user&.full_name%>
+      <span>on <%= b.created_at %></span>  
+    </small>
+    </br></br>
+<% end %>

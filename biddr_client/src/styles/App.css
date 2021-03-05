@@ -1,0 +1,18 @@
+
+
+.container{
+  background-image: url(./image/bidding.jpg);
+  height:460px;
+  width:100%;
+
+
+}
+.coin{
+  background-image: url(./image/coin.png);
+  height:3.5rem;
+  width:11rem;
+  float:left;
+  margin-top: -1.3rem;
+  margin-left:-3rem;
+  
+}

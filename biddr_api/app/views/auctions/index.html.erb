@@ -1,0 +1,6 @@
+<div>
+  <% @auctions.each do |auction| %> 
+      <h2><%= link_to auction.title,auction_path(auction)%></h2>
+      <span>Posted on <%= auction.created_at %></span>  
+  <% end %>  
+</div>
