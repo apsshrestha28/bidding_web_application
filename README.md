@@ -1,4 +1,4 @@
-# bidding_web_application
+# Bidding Web Application
 
 Description   :  Platform that facilitates auctioneer and bidder’s interactions with user authentication & authorization system.
 
